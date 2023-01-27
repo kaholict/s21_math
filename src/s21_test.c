@@ -207,8 +207,8 @@ START_TEST(atan_tests) {
   ck_assert_float_eq(atan(0), s21_atan(0));
   ck_assert_float_eq(atan(1), s21_atan(1));
   ck_assert_float_eq(atan(-1), s21_atan(-1));
-//  ck_assert_float_eq(atan(2.5), s21_atan(2.5));
-//  ck_assert_float_eq(atan(-3.5), s21_atan(-3.5));
+ ck_assert_float_eq(atan(2.5), s21_atan(2.5));
+ ck_assert_float_eq(atan(-3.5), s21_atan(-3.5));
 }
 END_TEST
 

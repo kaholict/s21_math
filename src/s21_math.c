@@ -176,11 +176,11 @@ long double s21_atan(double x) {
         minCounter = -1;
       }
       if (temp < 1) {
-        for (int i = 0; i < 10000; i++)
+        for (int i = 0; i < 100; i++)
           result += (s21_pow(-1, i) * s21_pow(temp, 1 + 2 * i)) / (1 + (2 * i));
         result = result * minCounter;
       } else {
-        for (int i = 0; i < 10000; i++)
+        for (int i = 0; i < 100; i++)
           result +=
               (s21_pow(-1, i) * s21_pow(temp, -1 - 2 * i)) / (1 + (2 * i));
         result = ((S21_PI / 2) - result) * minCounter;
